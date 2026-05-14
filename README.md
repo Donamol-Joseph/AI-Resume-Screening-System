@@ -2,156 +2,175 @@
 
 # AI Resume Screening System
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=700&lines=AI-Powered+Resume+Classification;Machine+Learning+%2B+NLP+Project;Automated+Resume+Screening+System;Built+with+Python+%26+Scikit-Learn" alt="Typing SVG" />
-
 <p align="center">
-  <img src="https://img.shields.io/github/stars/Donamol-Joseph/AI-Resume-Screening-System?style=for-the-badge&color=blue" />
-  <img src="https://img.shields.io/github/forks/Donamol-Joseph/AI-Resume-Screening-System?style=for-the-badge&color=purple" />
-  <img src="https://img.shields.io/github/license/Donamol-Joseph/AI-Resume-Screening-System?style=for-the-badge&color=green" />
-  <img src="https://img.shields.io/badge/Python-3.11-yellow?style=for-the-badge&logo=python" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=34&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=AI-Powered+Resume+Screening+System;Natural+Language+Processing+%2B+Machine+Learning;Automated+Resume+Classification+Pipeline" alt="Typing Animation" />
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:7c3aed&height=180&section=header&text=AI%20Resume%20Screening&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Donamol-Joseph/AI-Resume-Screening-System?style=flat-square&color=1f6feb" />
+  <img src="https://img.shields.io/github/forks/Donamol-Joseph/AI-Resume-Screening-System?style=flat-square&color=8957e5" />
+  <img src="https://img.shields.io/github/license/Donamol-Joseph/AI-Resume-Screening-System?style=flat-square&color=238636" />
+  <img src="https://img.shields.io/badge/Python-3.11-111827?style=flat-square&logo=python" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-ML-orange?style=flat-square&logo=scikitlearn" />
+</p>
+
+<br>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e3a8a&height=2" />
 
 </div>
 
----
+## Overview
 
-# Project Overview
+This project is an end-to-end AI-based Resume Screening System designed to automate resume classification using Natural Language Processing and Machine Learning.
 
-An advanced **AI-powered Resume Screening System** developed using **Machine Learning** and **Natural Language Processing (NLP)** techniques to automatically classify resumes into different job domains.
+The system processes resume text, performs NLP-based preprocessing, extracts textual features using TF-IDF Vectorization, and predicts the corresponding job category using machine learning models.
 
-This project demonstrates how AI can assist recruiters and HR professionals by automating resume filtering and improving hiring efficiency.
+Built as a Kaggle notebook project, this repository demonstrates practical applications of:
 
----
-
-# Features
-
-Automated Resume Classification
-NLP-based Text Cleaning & Processing
-Exploratory Data Analysis (EDA)
-📑 TF-IDF Feature Extraction
-Machine Learning Model Training
-Model Evaluation & Comparison
-⚡ High Accuracy Resume Prediction
-🎯 End-to-End AI Pipeline
+* Natural Language Processing
+* Text Classification
+* Machine Learning Pipelines
+* Feature Engineering
+* Resume Analytics
 
 ---
 
-# Machine Learning Workflow
+## Dataset
 
-```mermaid
-graph LR;
-    A[Resume Dataset] --> B[Data Cleaning]
-    B --> C[Text Preprocessing]
-    C --> D[TF-IDF Vectorization]
-    D --> E[Model Training]
-    E --> F[Prediction]
-    F --> G[Evaluation]
-```
-
----
-
-# Dataset Information
-
-### Kaggle Dataset
+Dataset Source:
 
 ```bash
 /kaggle/input/datasets/snehaanbhawal/resume-dataset
 ```
 
-### Categories Included
+The dataset contains resumes from multiple professional domains including:
 
-* Data Science
-* Python Developer
-* Java Developer
-* HR
-* DevOps Engineer
-* Web Designing
-* Testing
-* Business Analyst
-* Sales
-* Mechanical Engineer
-* And More...
-
----
-
-# Tech Stack
-
-<div align="center">
-
-| Category  | Technologies                       |
-| --------- | ---------------------------------- |
-| Language  | Python                             |
-| Libraries | Pandas, NumPy, Matplotlib, Seaborn |
-| NLP       | Regex, TF-IDF Vectorizer           |
-| ML Models | Random Forest, XGBoost             |
-| Tools     | Jupyter Notebook, Kaggle           |
-
-</div>
+| Categories          |
+| ------------------- |
+| Data Science        |
+| Python Developer    |
+| Java Developer      |
+| HR                  |
+| Testing             |
+| DevOps Engineer     |
+| Business Analyst    |
+| Web Designing       |
+| Mechanical Engineer |
+| Sales               |
 
 ---
 
-# Exploratory Data Analysis
+## Architecture
 
-The notebook includes:
-
-✔ Resume category distribution
-✔ Count plots and visualizations
-✔ Feature importance analysis
-✔ Confusion matrix visualization
-✔ Model performance comparison
-
----
-
-# Models Used
-
-<div align="center">
-
-| Model                    | Purpose                     |
-| ------------------------ | --------------------------- |
-| Random Forest Classifier | Resume Classification       |
-| XGBoost Classifier       | High Performance Prediction |
-| TF-IDF Vectorizer        | Text Feature Extraction     |
-
-</div>
+```mermaid
+flowchart LR
+    A[Resume Dataset] --> B[Text Cleaning]
+    B --> C[NLP Preprocessing]
+    C --> D[TF-IDF Vectorization]
+    D --> E[Model Training]
+    E --> F[Prediction Engine]
+    F --> G[Evaluation Metrics]
+```
 
 ---
 
-# Project Structure
+## Technology Stack
+
+<table>
+<tr>
+<td width="50%">
+
+### Core Technologies
+
+* Python
+* Jupyter Notebook
+* Kaggle
+* Scikit-learn
+* XGBoost
+
+</td>
+<td width="50%">
+
+### Libraries Used
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Regex
+* TF-IDF Vectorizer
+
+</td>
+</tr>
+</table>
+
+---
+
+## Machine Learning Pipeline
+
+### Data Preprocessing
+
+* Text cleaning using regex
+* Lowercase normalization
+* Removal of URLs and special characters
+* Noise reduction
+
+### Feature Engineering
+
+* TF-IDF Vectorization
+* Numerical feature extraction from resume text
+
+### Models Used
+
+| Model         | Purpose               |
+| ------------- | --------------------- |
+| Random Forest | Resume Classification |
+| XGBoost       | Optimized Prediction  |
+
+### Evaluation Metrics
+
+* Accuracy Score
+* Classification Report
+* Confusion Matrix
+* Model Comparison
+
+---
+
+## Project Structure
 
 ```bash
 AI-Resume-Screening-System/
 │
+├── ai-resume-screening-system.ipynb
 ├── README.md
 ├── LICENSE
-├── ai-resume-screening-system.ipynb
 └── dataset/
 ```
 
 ---
 
-# Installation & Setup
+## Installation
 
-## 1. Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/Donamol-Joseph/AI-Resume-Screening-System.git
 ```
 
-## 2. Navigate to Project Folder
+### Navigate to Project
 
 ```bash
 cd AI-Resume-Screening-System
 ```
 
-## 3. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost
 ```
 
-## 4. Launch Notebook
+### Launch Notebook
 
 ```bash
 jupyter notebook
@@ -165,68 +184,58 @@ ai-resume-screening-system.ipynb
 
 ---
 
-# Results
+## Key Highlights
 
-* Successfully classified resumes into multiple job categories
-* Achieved strong predictive performance using NLP & ML
-* Demonstrated practical AI application in recruitment systems
+<table>
+<tr>
+<td>
 
----
+* Automated Resume Classification
+* NLP-based Text Processing
+* TF-IDF Feature Extraction
+* Multiple ML Models
+* Data Visualization
+* End-to-End ML Workflow
 
-# Future Improvements
+</td>
+<td>
 
-* * Deploy using Streamlit / Flask
-* * Add PDF Resume Upload Support
-* Integrate Deep Learning Models
-* Build ATS Dashboard
-* * Cloud Deployment
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Donamol-Joseph&theme=github_dark" />
 
----
-
-# Why This Project?
-
-This project demonstrates:
-
-✔ Real-world NLP application
-✔ End-to-end ML pipeline
-✔ Text classification techniques
-✔ Feature engineering skills
-✔ Data visualization & analysis
-✔ Practical AI implementation
-
-Perfect for:
-
-* Portfolio Projects
-* GitHub Showcases
-* Resume Projects
-* Kaggle Profiles
-* ML/NLP Learning
+</td>
+</tr>
+</table>
 
 ---
 
-# 📸 Repository Preview
+## Future Enhancements
 
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Donamol-Joseph&show_icons=true&theme=tokyonight" height="170" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Donamol-Joseph&theme=tokyonight" height="170" />
-</div>
+* Streamlit Deployment
+* Resume Ranking System
+* PDF Resume Upload Support
+* Deep Learning Integration
+* ATS Dashboard Development
 
 ---
 
-# Connect With Me
+## Author
 
-<div align="center">
+<div align="left">
+
+<strong>Donamol Joseph</strong>
+
+<br><br>
 
 <a href="https://github.com/Donamol-Joseph">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 <a href="https://www.linkedin.com/in/donamoljoseph/">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
 <a href="mailto:donajoseph272006@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
 </div>
@@ -235,8 +244,6 @@ Perfect for:
 
 <div align="center">
 
-### If you like this project, give it a star on GitHub
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:0ea5e9&height=120&section=footer" width="100%" />
+<sub>Built with Machine Learning and Natural Language Processing</sub>
 
 </div>
