@@ -3,48 +3,46 @@
 # AI Resume Screening System
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=34&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=AI-Powered+Resume+Screening+System;Natural+Language+Processing+%2B+Machine+Learning;Automated+Resume+Classification+Pipeline" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=30&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&width=850&lines=AI-Powered+Resume+Screening+System;Machine+Learning+and+NLP+Pipeline;Automated+Resume+Classification" alt="Typing Animation" />
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/license/Donamol-Joseph/AI-Resume-Screening-System?style=flat-square&color=1f6feb" />
   <img src="https://img.shields.io/github/stars/Donamol-Joseph/AI-Resume-Screening-System?style=flat-square&color=1f6feb" />
   <img src="https://img.shields.io/github/forks/Donamol-Joseph/AI-Resume-Screening-System?style=flat-square&color=8957e5" />
-  <img src="https://img.shields.io/github/license/Donamol-Joseph/AI-Resume-Screening-System?style=flat-square&color=238636" />
   <img src="https://img.shields.io/badge/Python-3.11-111827?style=flat-square&logo=python" />
   <img src="https://img.shields.io/badge/Scikit--Learn-ML-orange?style=flat-square&logo=scikitlearn" />
 </p>
 
-<br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e3a8a&height=2" />
-
 </div>
+
+---
 
 ## Overview
 
-This project is an end-to-end AI-based Resume Screening System designed to automate resume classification using Natural Language Processing and Machine Learning.
+The AI Resume Screening System is a machine learning and natural language processing project designed to automate resume classification across multiple professional domains.
 
-The system processes resume text, performs NLP-based preprocessing, extracts textual features using TF-IDF Vectorization, and predicts the corresponding job category using machine learning models.
+The system processes resume text, performs preprocessing and feature extraction using TF-IDF Vectorization, and predicts the corresponding job category using machine learning models.
 
-Built as a Kaggle notebook project, this repository demonstrates practical applications of:
+This project demonstrates practical applications of:
 
 * Natural Language Processing
 * Text Classification
-* Machine Learning Pipelines
 * Feature Engineering
+* Machine Learning Pipelines
 * Resume Analytics
 
 ---
 
 ## Dataset
 
-Dataset Source:
+Dataset used from Kaggle:
 
 ```bash
 /kaggle/input/datasets/snehaanbhawal/resume-dataset
 ```
 
-The dataset contains resumes from multiple professional domains including:
+The dataset contains resumes from multiple categories including:
 
 | Categories          |
 | ------------------- |
@@ -52,16 +50,16 @@ The dataset contains resumes from multiple professional domains including:
 | Python Developer    |
 | Java Developer      |
 | HR                  |
-| Testing             |
 | DevOps Engineer     |
 | Business Analyst    |
 | Web Designing       |
-| Mechanical Engineer |
+| Testing             |
 | Sales               |
+| Mechanical Engineer |
 
 ---
 
-## Architecture
+## Workflow
 
 ```mermaid
 flowchart LR
@@ -69,41 +67,33 @@ flowchart LR
     B --> C[NLP Preprocessing]
     C --> D[TF-IDF Vectorization]
     D --> E[Model Training]
-    E --> F[Prediction Engine]
-    F --> G[Evaluation Metrics]
+    E --> F[Prediction]
+    F --> G[Evaluation]
 ```
 
 ---
 
 ## Technology Stack
 
-<table>
-<tr>
-<td width="50%">
+| Category             | Technologies                       |
+| -------------------- | ---------------------------------- |
+| Programming Language | Python                             |
+| Libraries            | Pandas, NumPy, Matplotlib, Seaborn |
+| NLP Techniques       | Regex, TF-IDF Vectorization        |
+| Machine Learning     | Random Forest, XGBoost             |
+| Environment          | Kaggle Notebook, Jupyter Notebook  |
 
-### Core Technologies
+---
 
-* Python
-* Jupyter Notebook
-* Kaggle
-* Scikit-learn
-* XGBoost
+## Core Capabilities
 
-</td>
-<td width="50%">
-
-### Libraries Used
-
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Regex
-* TF-IDF Vectorizer
-
-</td>
-</tr>
-</table>
+* Automated Resume Classification
+* NLP-based Text Processing
+* TF-IDF Feature Extraction
+* Machine Learning Model Training
+* Model Evaluation and Comparison
+* Data Visualization and Analysis
+* End-to-End Prediction Pipeline
 
 ---
 
@@ -111,29 +101,29 @@ flowchart LR
 
 ### Data Preprocessing
 
-* Text cleaning using regex
-* Lowercase normalization
 * Removal of URLs and special characters
-* Noise reduction
+* Text normalization and cleaning
+* Lowercase transformation
+* Noise reduction using regex
 
 ### Feature Engineering
 
 * TF-IDF Vectorization
-* Numerical feature extraction from resume text
+* Numerical feature transformation from textual resume data
 
 ### Models Used
 
-| Model         | Purpose               |
-| ------------- | --------------------- |
-| Random Forest | Resume Classification |
-| XGBoost       | Optimized Prediction  |
+| Model                    | Purpose               |
+| ------------------------ | --------------------- |
+| Random Forest Classifier | Resume Classification |
+| XGBoost Classifier       | Optimized Prediction  |
 
 ### Evaluation Metrics
 
 * Accuracy Score
 * Classification Report
 * Confusion Matrix
-* Model Comparison
+* Model Performance Comparison
 
 ---
 
@@ -158,7 +148,7 @@ AI-Resume-Screening-System/
 git clone https://github.com/Donamol-Joseph/AI-Resume-Screening-System.git
 ```
 
-### Navigate to Project
+### Navigate to Project Directory
 
 ```bash
 cd AI-Resume-Screening-System
@@ -176,7 +166,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost
 jupyter notebook
 ```
 
-Open:
+Open the notebook:
 
 ```bash
 ai-resume-screening-system.ipynb
@@ -184,33 +174,17 @@ ai-resume-screening-system.ipynb
 
 ---
 
-## Key Highlights
+## Results
 
-<table>
-<tr>
-<td>
+The trained models successfully classify resumes into their respective job categories using NLP and machine learning techniques.
 
-* Automated Resume Classification
-* NLP-based Text Processing
-* TF-IDF Feature Extraction
-* Multiple ML Models
-* Data Visualization
-* End-to-End ML Workflow
-
-</td>
-<td>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Donamol-Joseph&theme=github_dark" />
-
-</td>
-</tr>
-</table>
+The project demonstrates effective performance in identifying resume domains from textual content.
 
 ---
 
-## Future Enhancements
+## Future Improvements
 
-* Streamlit Deployment
+* Streamlit or Flask Deployment
 * Resume Ranking System
 * PDF Resume Upload Support
 * Deep Learning Integration
@@ -220,14 +194,11 @@ ai-resume-screening-system.ipynb
 
 ## Author
 
-<div align="left">
+**Donamol Joseph**
 
-<strong>Donamol Joseph</strong>
-
-<br><br>
-
+<p>
 <a href="https://github.com/Donamol-Joseph">
-  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 <a href="https://www.linkedin.com/in/donamoljoseph/">
@@ -237,13 +208,12 @@ ai-resume-screening-system.ipynb
 <a href="mailto:donajoseph272006@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-
-</div>
+</p>
 
 ---
 
 <div align="center">
 
-<sub>Built with Machine Learning and Natural Language Processing</sub>
+Built using Machine Learning and Natural Language Processing
 
 </div>
